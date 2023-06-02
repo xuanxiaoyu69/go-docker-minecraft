@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>容器信息</title>
+</head>
+<body>
+<h1>容器信息</h1>
+<table>
+    <tr>
+        <th>容器ID</th>
+        <th>镜像</th>
+        <th>状态</th>
+    </tr>
+    {{ range . }}
+    <tr>
+        <td>{{ .ID }}</td>
+        <td>{{ .Image }}</td>
+        <td>{{ .Status }}</td>
+    </tr>
+    {{ end }}
+</table>
+</body>
+</html>
